@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Numerica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Game of Numerica</h1>
+        <div class="game-board">
+            <div class="stacks">
+                <div class="stack" id="stack1"></div>
+                <div class="stack" id="stack2"></div>
+                <div class="stack" id="stack3"></div>
+                <div class="stack" id="stack4"></div>
+            </div>
+            <div class="columns">
+                <div class="column" id="column1"></div>
+                <div class="column" id="column2"></div>
+                <div class="column" id="column3"></div>
+                <div class="column" id="column4"></div>
+            </div>
+            <div class="user-tiles" id="userTiles">Drawn Tile: None</div>
+            <button id="drawTile">Draw Tile</button>
+            <div id="timer">Time Elapsed: 00:00</div>
+            <div class="tile-count">
+                Tiles Remaining: <span id="tileCount">52</span>
+            </div>
+            <a href="Rules.txt" download>Rules</a>
+        </div>
+        <div class="score">
+            <h2>Score: <span id="score">0</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

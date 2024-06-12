@@ -1,0 +1,144 @@
+body {
+    font-family: 'Old Standard TT', serif;
+    background-image: url('Numerica BG.jpg');
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #4d2e12;
+}
+
+
+.container {
+    text-align: center;
+    border: 3px solid #4d2e12;
+    padding: 20px;
+    background-color: #fae4b4;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stacks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.stack {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-color: #8c4b00;
+    border: 2px solid #4d2e12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    position: relative; /* Allow positioning of tiles */
+    overflow: hidden; /* Hide overflow to keep stack bounds */
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 50px;
+    height: 300px;
+    margin: 0 10px;
+    background-color: #8c4b00;
+    border: 2px solid #4d2e12;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align tiles at the bottom */
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+    overflow-y: auto; /* Add vertical scroll to columns */
+}
+
+.user-tiles {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.tile {
+    background-color: #c48200;
+    border: 2px solid #4d2e12;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0; /* Ensure vertical space between stacked tiles */
+    cursor: grab;
+    position: relative; /* Position tiles relative to the parent container */
+    z-index: 1; /* Default z-index for tiles */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #c48200;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Old Standard TT', serif;
+}
+
+button:hover {
+    background-color: #8c4b00;
+}
+
+.tile-count {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Normal link style */
+a {
+    color: #77240a96; /* Blue color for the link */
+    text-decoration: none; /* No underline */
+    font-size: 1em; /* Larger font size */
+    display: inline-block; /* Ensure it remains as an inline block element */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+/* Style for link when hovered */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Style for link when active (clicked) */
+a:active {
+    color: #f28639c0; /* Slightly darker blue */
+}
